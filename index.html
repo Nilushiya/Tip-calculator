@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tip Calculator</title>
+    <link rel="stylesheet" href="/style.css">
+
+</head>
+<body>
+    <div class="logo">
+        <img src="/images/logo.svg" alt="">
+    </div>
+    <div class="box">
+        <div class="lbox">
+            <p class="bill">Bill</p>
+            
+            <input type="text" id="input">
+            <img src="/images/icon-dollar.svg" alt="">
+            <button type="button" id="button">Add</button>
+            <p class="tip">Select Tip %</p>
+            <div class="per">
+                <div class="box box1">5%</div>
+                <div class="box box2">10%</div>
+                <div class="box box3">15%</div>
+                <div class="box box4">25%</div>
+                <div class="box box5">50%</div>
+                <input type="text" class="defaultBox">
+            </div>
+            <div class="label">
+                <label for="">Number of people</label>
+                <label for="" class="cannot">Can't be Zero</label>
+            </div>
+            <input type="text" class="npeople" >
+            <img src="/images/icon-person.svg" alt="">
+            
+        </div>
+        <div class="rbox">
+            <div class="ramount">
+                <div class="left">
+                    <div class="pp">
+                        <p class="para para1">Tip Amount</p> 
+                        <span>/ person</span>
+                    </div>
+                    <div class="tipAmount">
+                       4
+                    </div>
+                </div>
+                <div class="right">
+                    <div class="ppp">
+                        <p class="para para3">Total</p> 
+                        <span>/ person</span>
+                    </div>
+                <div id="totalAmount">
+                    
+                </div>
+                </div>
+            </div>
+            <a href="#">Reset</a>
+        </div>
+    </div>
+    <script >
+    
+        let total = document.getElementById("input")
+        let Amount =  document.getElementById("totalAmount")
+        console.log(total.value)
+
+      
+
+       let button = document.getElementById("button")
+       button.addEventListener("click",() => {
+        Amount.innerHTML = total.value
+        
+       })
+      89
+    </script>
+</body>
+</html>

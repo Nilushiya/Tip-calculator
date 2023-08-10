@@ -17,14 +17,13 @@
             
             <input type="text" id="input">
             <img src="/images/icon-dollar.svg" alt="">
-            <button type="button" id="button">Add</button>
             <p class="tip">Select Tip %</p>
             <div class="per">
-                <div class="box box1">5%</div>
-                <div class="box box2">10%</div>
-                <div class="box box3">15%</div>
-                <div class="box box4">25%</div>
-                <div class="box box5">50%</div>
+               <a class="box box1">5%</a>
+                <a class="box box2">10%</a>
+                <a class="box box3">15%</a>
+                <a class="box box4">25%</a>
+                <a class="box box5">50%</a>
                 <input type="text" class="defaultBox">
             </div>
             <div class="label">
@@ -43,7 +42,7 @@
                         <span>/ person</span>
                     </div>
                     <div class="tipAmount">
-                       4
+                       
                     </div>
                 </div>
                 <div class="right">
@@ -51,7 +50,7 @@
                         <p class="para para3">Total</p> 
                         <span>/ person</span>
                     </div>
-                <div id="totalAmount">
+                <div class="totalAmount">
                     
                 </div>
                 </div>
@@ -59,20 +58,8 @@
             <a href="#">Reset</a>
         </div>
     </div>
-    <script >
+    <script src="/script.js">
     
-        let total = document.getElementById("input")
-        let Amount =  document.getElementById("totalAmount")
-        console.log(total.value)
-
-      
-
-       let button = document.getElementById("button")
-       button.addEventListener("click",() => {
-        Amount.innerHTML = total.value
-        
-       })
-      89
     </script>
 </body>
 </html>

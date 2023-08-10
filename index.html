@@ -17,6 +17,7 @@
             
             <input type="text" id="input">
             <img src="/images/icon-dollar.svg" alt="">
+            <div class="errormsg"></div>
             <p class="tip">Select Tip %</p>
             <div class="per">
                <a class="box box1">5%</a>
@@ -30,9 +31,11 @@
                 <label for="">Number of people</label>
                 <label for="" class="cannot">Can't be Zero</label>
             </div>
-            <input type="text" class="npeople" >
-            <img src="/images/icon-person.svg" alt="">
-            
+            <div class="group">
+                <input type="text" class="npeople" >
+                <img src="/images/icon-person.svg" alt="">
+                <div class="errormsg"></div>
+            </div>
         </div>
         <div class="rbox">
             <div class="ramount">
@@ -55,7 +58,7 @@
                 </div>
                 </div>
             </div>
-            <a href="#">Reset</a>
+            <a class="reset">Reset</a>
         </div>
     </div>
     <script src="/script.js">

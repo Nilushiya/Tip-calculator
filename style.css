@@ -118,17 +118,17 @@ p{
 }
 .cannot{
   padding: 0px 0px 0px 65px;
-  color: ;
 }
 .tipAmount{
   padding-top: 15px;
-  font-size: 30px;
+  font-size: 20px;
   color: var(--Strong_cyan);
   flex: 2px;
+  height: 30px;
 }
 .totalAmount{
   padding-top: 15px;
-  font-size: 30px;
+  font-size: 20px;
   color: var(--Strong_cyan);
   flex: 2px;
 }
@@ -155,4 +155,9 @@ a{
    padding: 5px 0px 5px 35px;
    border-radius: 10px;
    cursor: pointer;
+}
+.errormsg{
+  position: absolute;
+  bottom: 395px;
+  left: 34%;
 }
